@@ -1,7 +1,7 @@
 // The Scanner utility reads inputs from the keyboard
 import java.util.Scanner;
 
-class Assesment2 {	// The name of the program
+class Max {	// The name of the program
 	public static void main (String args[]) {
 		Scanner input = new Scanner(System.in);	//create a new instance of the object Scanner
 
