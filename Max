@@ -73,7 +73,7 @@ private static void AreaOfCircle(){	// Start of the case 1
         area_of_circle = Circle(radius);
         
 		// Prints the result
-        System.out.println("The Area of the circle is " + area_of_circle);
+        System.out.printf("The Area of the circle is %.2f\n", area_of_circle);
     }	// End of AreaOfCircle
 
 
