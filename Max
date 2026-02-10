@@ -103,7 +103,7 @@ private static void VolumeOfCube(){	//Start of the case 2
         volume_of_cube = Cube(side);
         
 		// Prints the result
-        System.out.println("The volume of cube is " + volume_of_cube);
+		System.out.printf("The volume of cube is %.2f\n", volume_of_cube); 
     } // End of VolumeOfCube
 
 
@@ -135,7 +135,8 @@ private static void AreaOfParallelogram(){	//Start of case 6
         area_of_parallelogram = Parallelogram(base, height);
         
 		// Prints the result
-        System.out.println("The Area of the Parallelogram is " + area_of_parallelogram);
+        System.out.printf("The Area of the Parallelogram is %.2f\n", area_of_parallelogram);
+	
     } // End of AreaOfParallelogram
 
 
