@@ -19,6 +19,8 @@ class Max {	// The name of the program
 				System.out.println();
 				System.out.println("Select 2 to Calculate the Volume of a Cube");
 				System.out.println();
+				System.out.println("Select 3 to Calculate the Area of a Triangle");
+				System.out.println();
 				System.out.println("Select 5 to Calculate the area of a Rectangle");
 				System.out.println();
 				System.out.println("Select 6 to Calculate the Area of a Parallelogram");
@@ -32,9 +34,9 @@ class Max {	// The name of the program
 					case 2:	//Second scenario
 					VolumeOfCube();	//Name of the scenario
 					break;
-					//case 3:	
-					//AreaOfTriangle();	
-					//break;
+					case 3:	
+					AreaOfTriangle();	
+					break;
 					//case 4:	
 					//AreaOfTrapezoid();	
 					//break;
@@ -112,6 +114,33 @@ private static void VolumeOfCube(){	//Start of the case 2
 	private static double Cube(final double side){	//UDF "Cube"
 		return (side*side*side);	//Calculates the value and returns the result to volume_of_cube
 	}	// End of UDF "Cube"
+		private static void AreaOfTriangle(){ //Start of Case 3 
+	    
+	    Scanner input=new Scanner(System.in); //create a new instance of the object Scanner
+	    
+	    //Declaration of variables
+	    double base = 0;
+	    double height = 0;
+	    double area_of_triangle;
+	    
+	    System.out.println(); //blank line
+	    System.out.println("This program will calculate the area of a triangle"); //Prints message
+	    System.out.println();
+	    System.out.println("Please enter the base"); //Asks the user for the input of the base
+	    base = input.nextDouble();
+        System.out.println(); //prints blank line 
+        System.out.println("Please enter the height");//Asks the user for the input of the height
+        height = input.nextDouble();
+        System.out.println();
+        
+        area_of_triangle = Triangle(base, height);
+        
+         System.out.println("The area of the triangle is " + area_of_triangle);
+	}
+	
+	private static double Triangle(final double base, final double height){	//UDF "Triangle", Base and Heights are inputs, if udf didn't get both inputs - you'll get an error. "final" means you can't change this varuable
+		return (base*height);	//Calculates the value and returns the result to area_of_rectangle
+	}	// End of UDF "triangle"
 
 		private static void AreaOfRectangle(){	//Start of case 5
 
