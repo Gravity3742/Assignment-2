@@ -21,8 +21,8 @@ class Max {	// The name of the program
 				System.out.println();
 				System.out.println("Select 3 to Calculate the Area of a Triangle");
 				System.out.println();
-        System.out.println("Select 4 to Calculate the Area of a Trapezoid");
-        System.out.println();
+        		System.out.println("Select 4 to Calculate the Area of a Trapezoid");
+        		System.out.println();
 				System.out.println("Select 5 to Calculate the area of a Rectangle");
 				System.out.println();
 				System.out.println("Select 6 to Calculate the Area of a Parallelogram");
@@ -43,12 +43,9 @@ class Max {	// The name of the program
 					AreaOfTrapezoid();	
 					break;
 					case 5:	
-					AreaOfRectangle();
-					break;
-					//case 5:	
 					//AreaOfRectangle();
 					//break;
-					case 6:	
+					//case 6:	
 					AreaOfParallelogram();
 				}	//End of Switch statement
 
@@ -116,34 +113,37 @@ private static void VolumeOfCube(){	//Start of the case 2
     } // End of VolumeOfCube
 	private static double Cube(final double side){	//UDF "Cube"
 		return (side*side*side);	//Calculates the value and returns the result to volume_of_cube
-	}	// End of UDF "Cube"
+}	// End of UDF "Cube"
+
+
+
 		private static void AreaOfTriangle(){ //Start of Case 3 
 	    
-	    Scanner input=new Scanner(System.in); //create a new instance of the object Scanner
+	    	Scanner input=new Scanner(System.in); //create a new instance of the object Scanner
 	    
-	    //Declaration of variables
-	    double base = 0;
-	    double height = 0;
-	    double area_of_triangle;
+	    	//Declaration of variables
+	    	double base = 0;
+	    	double height = 0;
+	    	double area_of_triangle;
 	    
-	    System.out.println(); //blank line
-	    System.out.println("This program will calculate the area of a triangle"); //Prints message
-	    System.out.println();
-	    System.out.println("Please enter the base"); //Asks the user for the input of the base
-	    base = input.nextDouble();
-        System.out.println(); //prints blank line 
-        System.out.println("Please enter the height");//Asks the user for the input of the height
-        height = input.nextDouble();
-        System.out.println();
+	    	System.out.println(); //blank line
+	    	System.out.println("This program will calculate the area of a triangle"); //Prints message
+	    	System.out.println();
+	    	System.out.println("Please enter the base"); //Asks the user for the input of the base
+	    	base = input.nextDouble();
+        	System.out.println(); //prints blank line 
+        	System.out.println("Please enter the height");//Asks the user for the input of the height
+        	height = input.nextDouble();
+        	System.out.println();
         
-        area_of_triangle = Triangle(base, height);
+        	area_of_triangle = Triangle(base, height);
         
-         System.out.println("The area of the triangle is " + area_of_triangle);
-	}
+         	System.out.println("The area of the triangle is " + area_of_triangle);
+		}
 	
 	private static double Triangle(final double base, final double height){	//UDF "Triangle", Base and Heights are inputs, if udf didn't get both inputs - you'll get an error. "final" means you can't change this varuable
 		return (base*height);	//Calculates the value and returns the result to area_of_rectangle
-	}	// End of UDF "triangle"
+}	// End of UDF "triangle"
 
 	
 	//start of case 4.
