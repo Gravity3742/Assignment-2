@@ -21,6 +21,8 @@ class Max {	// The name of the program
 				System.out.println();
 				System.out.println("Select 3 to Calculate the Area of a Triangle");
 				System.out.println();
+        System.out.println("Select 4 to Calculate the Area of a Trapezoid");
+        System.out.println();
 				System.out.println("Select 5 to Calculate the area of a Rectangle");
 				System.out.println();
 				System.out.println("Select 6 to Calculate the Area of a Parallelogram");
@@ -37,12 +39,15 @@ class Max {	// The name of the program
 					case 3:	
 					AreaOfTriangle();	
 					break;
-					//case 4:	
-					//AreaOfTrapezoid();	
-					//break;
+					case 4:	
+					AreaOfTrapezoid();	
+					break;
 					case 5:	
 					AreaOfRectangle();
 					break;
+					//case 5:	
+					//AreaOfRectangle();
+					//break;
 					case 6:	
 					AreaOfParallelogram();
 				}	//End of Switch statement
@@ -109,8 +114,6 @@ private static void VolumeOfCube(){	//Start of the case 2
 		// Prints the result
 		System.out.printf("The volume of cube is %.2f\n", volume_of_cube); 
     } // End of VolumeOfCube
-
-
 	private static double Cube(final double side){	//UDF "Cube"
 		return (side*side*side);	//Calculates the value and returns the result to volume_of_cube
 	}	// End of UDF "Cube"
@@ -142,34 +145,47 @@ private static void VolumeOfCube(){	//Start of the case 2
 		return (base*height);	//Calculates the value and returns the result to area_of_rectangle
 	}	// End of UDF "triangle"
 
-		private static void AreaOfRectangle(){	//Start of case 5
-
+	
+	//start of case 4.
+	private static void AreaOfTrapezoid(){	
+        
         Scanner input=new Scanner(System.in);	//create a new instance of the object Scanner
         
 		// Declaration of variables 
-		double length = 0;
-		double width = 0;
-		double area_of_rectangle = 0;
-		
-		System.out.println(); //blank line
-        System.out.println("This program will calculate the Area of a rectangle"); //print message
+        double sideA = 0;
+        double sideB = 0;
+        double height = 0;
+        double add = 0;
+        double area_of_Trapezoid = 0;
+        // Asks user to input the value of base a
+        System.out.println(); //blank line
+        System.out.println("This program will calculate the Area of a Trapeziod"); //prints message
         System.out.println();
-        System.out.println("Please enter the length");//Asks user for the length 
-        length = input.nextDouble();
-        System.out.println();
-        System.out.println("Please enter the width");//Ask user for the width 
-        width = input.nextDouble();
-        System.out.println();
+        System.out.println("Please enter the value of sideA");	//Asks user to input the value of sideA
+        sideA = input.nextDouble();
+        System.out.println(); //prints blank line        
         
-        area_of_rectangle = Rectangle(length, width);
+        // Asks user to input the value of sideB
+        System.out.println("Please enter the value of sideB");	//Asks user to input the value of sideB
+        sideB = input.nextDouble();
+        System.out.println(); //prints blank line   
         
+        // Asks user to input the value of height
+        System.out.println("Please enter the value of height");	//Asks user to input the value of height
+        height = input.nextDouble();
+        System.out.println(); //prints blank line 
         
-        System.out.println("The area of the rectangle is " + area_of_rectangle);
-	}
-	
-	private static double Rectangle(final double length, final double width){	//UDF "Rectangle", length and width are inputs, if udf didn't get both inputs - you'll get an error. "final" means you can't change this varuable
-		return (length*width);	//Calculates the value and returns the result to area_of_rectangle
-	}	// End of UDF "Rectangle"
+        // Sends the values of the variables "sideA", "sideB", and "height" to the user‑defined function (UDF) named "Trapezoid"
+        area_of_Trapezoid = Trapezoid(sideA, sideB, height, add);
+        
+		// Prints the result
+        System.out.printf("The Area of the Trapezoid is %.2f\n",area_of_Trapezoid);
+    }	// End of AreaOfTrapezoid
+    private static double Trapezoid(final double sideA, final double sideB, final double height, final double add){	//UDF "Trapezoid"
+		return ((sideA+sideB)/2*height);
+}
+		//Calculates the value and returns the result to area_of_Trapezoid
+		// End of UDF "Trapezoid"
 
 
 private static void AreaOfParallelogram(){	//Start of case 6
