@@ -1,6 +1,6 @@
 Main Code: Finished. Probably need to check comments and do some corrections
 
-Main Flowchart: We have a draft (Max), Kenned is planning to make it
+Main Flowchart: FINISHED (Kenned)
 
 List of Test Data: FINISHED (Max)
 
