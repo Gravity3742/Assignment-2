@@ -42,9 +42,9 @@ class Max {	// The name of the program
 					case 4:	
 					AreaOfTrapezoid();	
 					break;
-					//case 5:	
-					//AreaOfRectangle();
-					//break;
+					case 5:	
+					AreaOfRectangle();
+					break;
 					case 6:	
 					AreaOfParallelogram();
 				}	//End of Switch statement
