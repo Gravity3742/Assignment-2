@@ -150,7 +150,7 @@ private static void VolumeOfCube(){	//Start of the case 2
         	height = input.nextDouble();
         	System.out.println();
         
-        	area_of_triangle = Triangle(base, height);
+        	area_of_triangle = Triangle(base, height) / 2;
         
          	System.out.println("The area of the triangle is " + area_of_triangle);
 		}
