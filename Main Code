@@ -153,7 +153,7 @@ private static void VolumeOfCube(){	//Start of the case 2
 	
 
 	private static double Triangle(final double base, final double height){//UDF "Triangle", Base and Heights are inputs, if udf didn't get both inputs - you'll get an error. "final" means you can't change this variable
-		return (base*height); //Calculates the value and returns the result to area_of_triangle
+		return (base*height)/2; //Calculates the value and returns the result to area_of_triangle
 }	// End of UDF "triangle"
 
 
