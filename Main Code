@@ -14,7 +14,7 @@ class CalculationOfShapes {	// The name of the program
 				System.out.println("This program will give you a choice between several different programs, ");
 				System.out.println("please select which one you want to use: ");
 				System.out.println();
-				System.out.println("Select 1 to Calculate the Area of a circle");
+				System.out.println("Select 1 to Calculate the Area of a Circle");
 				System.out.println();
 				System.out.println("Select 2 to Calculate the Volume of a Cube");
 				System.out.println();
@@ -22,7 +22,7 @@ class CalculationOfShapes {	// The name of the program
 				System.out.println();
         		System.out.println("Select 4 to Calculate the Area of a Trapezoid");
         		System.out.println();
-				System.out.println("Select 5 to Calculate the area of a Rectangle");
+				System.out.println("Select 5 to Calculate the Area of a Rectangle");
 				System.out.println();
 				System.out.println("Select 6 to Calculate the Area of a Parallelogram");
 				System.out.println();
