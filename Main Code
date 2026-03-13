@@ -73,7 +73,7 @@ private static void AreaOfCircle(){	// Start of the case 1
         System.out.println(); //blank line
         System.out.println("This program will calculate the Area of a circle"); //prints message
         System.out.println();
-        System.out.println("Please enter the value of the circle");	//Asks user to input the value of the circle
+        System.out.println("Please enter the value of the radius");	//Asks user to input the value of the radius
         radius = input.nextDouble();
         System.out.println(); //prints blank line        
         
