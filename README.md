@@ -1,4 +1,4 @@
-Main Code: Finishedand Polished
+Main Code: Finished and Polished
 
 Main Flowchart: FINISHED (Kenned)
 
