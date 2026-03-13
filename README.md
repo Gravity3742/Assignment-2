@@ -1,4 +1,4 @@
-Main Code: Finished. Probably need to check comments and do some corrections
+Main Code: Finishedand Polished
 
 Main Flowchart: FINISHED (Kenned)
 
