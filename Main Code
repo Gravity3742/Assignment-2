@@ -81,7 +81,7 @@ private static void AreaOfCircle(){	// Start of the case 1
         area_of_circle = Circle(radius);
         
 		// Prints the result
-        System.out.printf("The Area of the circle is %.2f cm\n", area_of_circle);
+        System.out.printf("The Area of the circle is %.2f cm^2\n", area_of_circle);
     }	// End of AreaOfCircle
 
 
@@ -114,7 +114,7 @@ private static void VolumeOfCube(){	//Start of the case 2
         volume_of_cube = Cube(side);
         
 		// Prints the result
-		System.out.printf("The volume of cube is %.2f cm\n", volume_of_cube); 
+		System.out.printf("The volume of cube is %.2f cm^3\n", volume_of_cube); 
     } // End of VolumeOfCube
 
 
@@ -148,7 +148,7 @@ private static void VolumeOfCube(){	//Start of the case 2
         
         	area_of_triangle = Triangle(base, height);
         
-         	System.out.printf("The area of the triangle is %.2f cm\n", area_of_triangle);
+System.out.printf("The area of the triangle is %.2f cm^2\n", area_of_triangle);
 		}
 	
 
@@ -192,7 +192,7 @@ private static void VolumeOfCube(){	//Start of the case 2
         area_of_Trapezoid = Trapezoid(sideA, sideB, height);
         
 		// Prints the result
-        System.out.printf("The Area of the Trapezoid is %.2f cm\n",area_of_Trapezoid);
+        System.out.printf("The Area of the Trapezoid is %.2f cm^2\n",area_of_Trapezoid);
     }	// End of AreaOfTrapezoid
 
 
@@ -230,7 +230,7 @@ private static void AreaOfRectangle(){	//Start of case 5
 		// Sends the values of the variables "length" and "width" to the user‑defined function (UDF) named "Rectangle"
         area_of_rectangle = Rectangle(length, width);
         
-        System.out.printf("The area of the rectangle is %.2f cm\n", area_of_rectangle);
+        System.out.printf("The area of the rectangle is %.2f cm^2\n", area_of_rectangle);
 	}
 	
 
@@ -267,8 +267,7 @@ private static void AreaOfParallelogram(){	//Start of case 6
         area_of_parallelogram = Parallelogram(base, height);
         
 		// Prints the result
-        System.out.printf("The Area of the Parallelogram is %.2f cm\n", area_of_parallelogram);
-    } // End of AreaOfParallelogram
+        System.out.printf("The Area of the Parallelogram is %.2f cm^2\n", area_of_parallelogram);
 
 
 	private static double Parallelogram(final double base, final double height){ //UDF "Parallelogram", base and height are inputs, if udf didn't get both inputs - you'll get an error. "final" means you can't change this variable
