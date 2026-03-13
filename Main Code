@@ -268,12 +268,13 @@ private static void AreaOfParallelogram(){	//Start of case 6
         
 		// Prints the result
         System.out.printf("The Area of the Parallelogram is %.2f cm^2\n", area_of_parallelogram);
+	}	// End of AreaOfParallelogram
 
 
 	private static double Parallelogram(final double base, final double height){ //UDF "Parallelogram", base and height are inputs, if udf didn't get both inputs - you'll get an error. "final" means you can't change this variable
 		return (base*height);	//Calculates the value and returns the result to area_of_parallelogram
 	}	// End of UDF "Parallelogram"
-
+	
 
 
 }//end of program
